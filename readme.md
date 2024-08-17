@@ -1,10 +1,12 @@
-# IMPAK Your **Image** **resizer** tool
+# IMPAK - Your **Image** **Resizer** Tool
 
-A tool to resize to resize all images inside a folder `impak ./images ./resized` by default it exports all the sizes.
+IMPAK is a powerful tool for resizing all images within a folder. By default, it exports images in all predefined sizes.
 
 ## Example usage:
 
 ```impak ./images ./resized --size sm,md,lg```
+
+This command resizes images in the ./images directory and outputs them to the ./resized directory in the specified sizes.
 
 ## Options
 
@@ -24,6 +26,7 @@ A tool to resize to resize all images inside a folder `impak ./images ./resized`
 | xl   | 1280       |
 | 2xl  | 1536       |
 
+---
 
 ```
 ██╗███╗   ███╗██████╗  █████╗ ██╗  ██╗

@@ -14,7 +14,7 @@
   },
   "keywords": [],
   "license": "MIT",
-  "description": "",
+  "description": "IMPAK is a versatile image resizing tool that allows you to efficiently resize all images in a directory to predefined sizes, preserving aspect ratios. Ideal for batch processing and automating image size adjustments, with support for various output sizes.",
   "devDependencies": {
     "@dword-design/eslint-plugin-import-alias": "^5.0.1",
     "@eslint/js": "^9.9.0",
