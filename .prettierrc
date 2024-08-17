@@ -1,0 +1,9 @@
+{
+  "tabWidth": 2,
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "printWidth": 140,
+  "semi": true,
+  "singleQuote": false,
+  "useTabs": false
+}

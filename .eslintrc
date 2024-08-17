@@ -1,0 +1,65 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "."
+  },
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:prettier/recommended",
+    "plugin:typescript-paths/recommended",
+  ],
+  "plugins": ["simple-import-sort", "import", "unused-imports", "@typescript-eslint", "eslint-plugin-paths", "check-file"],
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "./tsconfig.json",
+      }
+    }
+  },
+  "rules": {
+		"paths/alias": "error",
+    "import/no-unresolved": "error",
+    "consistent-return": 1,
+    "camelcase": ["error", { "properties": "never" }],
+    "no-else-return": 2,
+    "@typescript-eslint/no-unnecessary-condition": "error",
+    "prettier/prettier": "error",
+    "simple-import-sort/exports": "error",
+    "unused-imports/no-unused-imports": "error",
+    "no-console": ["error", { allow: ["info", "error"] }],
+    "unused-imports/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "all",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [["^.*\\u0000$", "^\\u0000", "^node:", "^@?\\w", "^", "^\\."]]
+      }
+    ],
+    "check-file/filename-naming-convention": [
+      "error",
+      {
+        "**/src": "KEBAB_CASE",
+      }
+    ],
+    "check-file/folder-naming-convention": [
+      "error",
+      {
+        "**/*": "KEBAB_CASE"
+      }
+    ]
+  }
+}

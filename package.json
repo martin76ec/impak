@@ -1,0 +1,45 @@
+{
+  "author": "martin76ec",
+  "name": "impak",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "impak": "dist/app/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx src/app/index.ts",
+    "build": "tsc && tsc-alias"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@dword-design/eslint-plugin-import-alias": "^5.0.1",
+    "@eslint/js": "^9.9.0",
+    "@types/node": "^22.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-check-file": "^2.8.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-paths": "^1.0.8",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-typescript-paths": "^0.0.33",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "prettier": "^3.0.3",
+    "tsc-alias": "^1.8.10",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4"
+  },
+  "module": "src/index.ts",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "sharp": "^0.33.5",
+    "zod": "^3.23.8"
+  }
+}
